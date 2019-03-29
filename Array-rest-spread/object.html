@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            foo:'foo val',
+            bar:'bar val',
+            baz:'baz val'
+        }
+        // 对象中的属性顺序不重要，数组中的需要一一对应
+        // const {foo,bar,aaa} = obj;
+        // 解构赋值
+        const {foo,bar:str1,} = obj;
+        const obj1 = {
+            p:['hello',{msg:'Word'}]
+        }
+        const {p:[hello,Word]}=obj1;
+    </script>
+</body>
+</html>
